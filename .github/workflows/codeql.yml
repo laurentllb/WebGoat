@@ -68,7 +68,8 @@ jobs:
 
     - run: |
         echo "Run, Build Application using script"
-        mvn clean package
+        mvn install
+        mvn package
         #./location_of_script_within_repo/buildscript.sh
 
     - name: Perform CodeQL Analysis
