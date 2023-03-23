@@ -68,6 +68,8 @@ jobs:
 
     - run: |
         echo "Run, Build Application using script"
+        java -version
+        mvn -version
         mvn install
         mvn package
         #./location_of_script_within_repo/buildscript.sh
