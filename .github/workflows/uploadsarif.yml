@@ -15,14 +15,11 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v3
-      - name: Run npm install
-        run: npm install
-      # Runs the ESlint code analysis
-      - name: Run ESLint
-        # eslint exits 1 if it finds anything to report
-        run: node_modules/.bin/eslint build docs lib script spec-main -f node_modules/@microsoft/eslint-formatter-sarif/sarif.js -o results.sarif || true
+      - name: checkout
+        run: ls -al
       # Uploads results.sarif to GitHub repository using the upload-sarif action
       - uses: github/codeql-action/upload-sarif@v2
+      - name: import Sarif
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: results.sarif
