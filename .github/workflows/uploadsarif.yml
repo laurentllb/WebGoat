@@ -3,13 +3,13 @@ name: "Import SARIF results from cov"
 # Run workflow each time code is pushed to your repository and on a schedule.
 # The scheduled workflow runs every Wednesday at 15:45 UTC.
 on: 
-#  workflow_dispatch
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main
 jobs:
   build:
     runs-on: ubuntu-latest
