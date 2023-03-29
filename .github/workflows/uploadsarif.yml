@@ -4,9 +4,8 @@ name: "Import SARIF results from cov"
 # The scheduled workflow runs every Wednesday at 15:45 UTC.
 on:
   push:
-  schedule: 
-    - cron: '45 15 * * 4'
-
+    branches:
+    - "*"
 jobs:
   build:
     runs-on: ubuntu-latest
