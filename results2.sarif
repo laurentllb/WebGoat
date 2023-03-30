@@ -19,7 +19,7 @@
                   }
                ],
                "message": {
-                  "text": "[See in Coverity](https://poc379.coverity.synopsys.com/query/defects.htm?project=WebGoat-opt&cid=10240)\n\"column\" in \"cursor.column\" looks like a copy-paste error.\n[CWE-398](https://cwe.mitre.org/data/definitions/398.html)\nRemediation Advice: Should it say \"row\" instead?"
+                  "text": "[See in Coverity](https://poc379.coverity.synopsys.com/query/defects.htm?project=WebGoat-opt&cid=10240)\n\"column\" in \"cursor.column\" looks like a copy-paste error.\n[CWE-398](https://cwe.mitre.org/data/definitions/398.html)\nRemediation Advice: Should it say \"row\" instead? Test LLB"
                },
                "codeFlows": [
                   {
