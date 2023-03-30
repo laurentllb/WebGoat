@@ -28,4 +28,5 @@ jobs:
       # - name: import Sarif
         with:
           # Path to SARIF file relative to the root of the repository
-          sarif_file: results.sarif
+          #sarif_file: results.sarif
+          sarif_file: webgoat-bd.sarif
