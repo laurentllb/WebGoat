@@ -25,7 +25,7 @@ jobs:
         run: ls -al
       # Uploads results.sarif to GitHub repository using the upload-sarif action
       - uses: github/codeql-action/upload-sarif@v2
-      - name: import Sarif
+      # - name: import Sarif
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: results.sarif
